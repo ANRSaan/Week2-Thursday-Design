@@ -26,11 +26,8 @@ function isPalindrom(str) {
     for (let i = str.length - 1; i >= 0; i--) {
       backwards.push(str[i])
     }
-  
-    let backwardsString = backwards.join('')
-  
-    console.log(backwardsString)
-    return str === backwardsString
+
+    return str === backwards.join('')
   }
   
   console.log(isPalindrom("a"))
