@@ -20,17 +20,28 @@ isPalindrom("racecar")
 // returns true
 */
 
-function isPalindrom(str) {
-    let backwards = []
+// function isPalindrom(str) {
+//     let backwards = []
   
-    for (let i = str.length - 1; i >= 0; i--) {
-      backwards.push(str[i])
-    }
+//     for (let i = str.length - 1; i >= 0; i--) {
+//       backwards.push(str[i])
+//     }
 
-    return str === backwards.join('')
-  }
+//     return str === backwards.join('')
+//   }
   
-  console.log(isPalindrom("a"))
-  console.log(isPalindrom("hello"))
-  console.log(isPalindrom("Racecar"))
-  console.log(isPalindrom("racecar"))
+  console.log(otherPalindrom("a"))
+  console.log(otherPalindrom("hello"))
+  console.log(otherPalindrom("Racecar"))
+  console.log(otherPalindrom("racecar"))
+
+  function otherPalindrom(str){
+    let j = str.length -1;
+    for (let i = 0; i <str.length /2; i++){
+        if (str[i] !== str[j]) {
+            return false
+        }
+        j--
+    }
+    return true
+  }
