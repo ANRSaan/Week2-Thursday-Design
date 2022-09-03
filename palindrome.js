@@ -32,7 +32,7 @@ isPalindrom("racecar")
   
 
 
-  function Palindrom(str){
+  function Palindrome(str){
     for (i = 0, j = str.length -1; i < str.length /2; i++, j--){
         if (str[i] !== str[j]) {
             return false
@@ -41,7 +41,7 @@ isPalindrom("racecar")
     return true
   }
 
-  console.log(Palindrom("a"))
-  console.log(Palindrom("hello"))
-  console.log(Palindrom("Racecar"))
-  console.log(Palindrom("racecar"))
+  console.log(Palindrome("a"))
+  console.log(Palindrome("hello"))
+  console.log(Palindrome("Racecar"))
+  console.log(Palindrome("racecar"))
