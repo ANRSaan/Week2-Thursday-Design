@@ -30,18 +30,18 @@ isPalindrom("racecar")
 //     return str === backwards.join('')
 //   }
   
-  console.log(otherPalindrom("a"))
-  console.log(otherPalindrom("hello"))
-  console.log(otherPalindrom("Racecar"))
-  console.log(otherPalindrom("racecar"))
 
-  function otherPalindrom(str){
-    let j = str.length -1;
-    for (let i = 0; i <str.length /2; i++){
+
+  function Palindrom(str){
+    for (i = 0, j = str.length -1; i < str.length /2; i++, j--){
         if (str[i] !== str[j]) {
             return false
         }
-        j--
     }
     return true
   }
+
+  console.log(Palindrom("a"))
+  console.log(Palindrom("hello"))
+  console.log(Palindrom("Racecar"))
+  console.log(Palindrom("racecar"))
